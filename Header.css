@@ -1,0 +1,95 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  width: 100%;
+  overflow-x: hidden; 
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  padding: 15px 30px;
+  transition: background-color 0.3s ease;
+  background-color: transparent;
+  color: white;
+}
+
+.header.scrolled {
+  background: rgba(255, 240, 240, 0.485); 
+backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  z-index: 999;
+  transition: all 0.3s ease;
+  color: white;
+}
+ul{
+    padding-left: 1500px;
+}
+.nav-link {
+  position: relative;
+  padding: 8px 60px;
+  font-weight: 600;
+  font-size: 40px;
+  color: white;
+  transition: all 0.3s ease;
+  border-radius: 12px;
+  overflow: hidden;
+  display: inline-block;
+  transform: scale(1);
+}
+
+.nav-link:hover {
+ 
+ 
+  color: red;
+  transform: scale(1.07); /* Slight zoom on hover */
+}
+
+.nav-link::before {
+  content: "";
+  position: absolute;
+  bottom: 6px;
+  left: 50%;
+  transform: translateX(-50%) scaleX(0);
+  transform-origin: center;
+  width: 60%;
+  height: 2px;
+  background-color: white;
+  transition: transform 0.4s ease, background-color 0.4s ease;
+  z-index: 1;
+}
+
+.nav-link:hover::before {
+  transform: translateX(-50%) scaleX(1);
+  background-color: red;
+}
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 1rem 2rem;
+  z-index: 1000;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  color: white; /* default when on top of carousel */
+}
+
+.nav-link {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+/* When scrolled past carousel */
+.header.scrolled {
+  background: rgba(196, 201, 211, 0.378); /* Your light glassy look */
+  backdrop-filter: blur(8px);
+  color: black;
+}

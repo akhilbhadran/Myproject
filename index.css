@@ -1,0 +1,39 @@
+
+
+@layer utilities {
+  @keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeUp {
+  animation: fadeUp 0.8s ease-out forwards;
+}
+
+
+  .animate-fade-in-up {
+    animation: fade-in-up 0.8s ease forwards;
+  }
+
+  .animate-delay-0 {
+    animation-delay: 0ms;
+  }
+
+  .animate-delay-200 {
+    animation-delay: 200ms;
+  }
+
+  .animate-delay-400 {
+    animation-delay: 400ms;
+  }
+
+  .animate-delay-600 {
+    animation-delay: 600ms;
+  }
+}

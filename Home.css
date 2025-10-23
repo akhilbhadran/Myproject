@@ -1,0 +1,49 @@
+
+
+
+.About1{
+  text-transform: uppercase;
+  font-size: 3rem;
+  letter-spacing: 1px;
+  color: #999;
+  margin-bottom: 8px;
+  text-align: center;
+  padding-top: 100px;
+    
+}
+
+.container_text1 {
+    display: flex;
+    flex-direction: column;
+   
+    width: 100%;
+    max-width: 1300px;
+    padding-left: 8%;
+    align-items: flex-start;
+    line-height: 1.8; /* or 30px for headings, 24px for paragraphs */
+
+   
+}
+
+
+.Heading_about{
+    font-size: 75px;
+    line-height: 80px;
+    padding-bottom: 20px;
+    color: black;
+    font-weight: bold;
+   
+}
+.aboutbutton{
+  margin-top: 100px;
+}
+p{
+  font-size: 23px;
+
+  color: #5c5c5c;
+ 
+  
+}
+.swiper-slide-custom {
+  width: 1000px; /* or whatever width fits best */
+}
